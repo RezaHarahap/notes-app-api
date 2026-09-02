@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="id">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="description" content="Ruang Catatan, aplikasi pencatatan yang terhubung dengan Notes API Dicoding."/><meta name="theme-color" content="#173f35"/><title>Ruang Catatan</title></head>
+<body>
+<a class="skip-link" href="#main-content">Lewati ke konten utama</a>
+<app-header app-name="Ruang Catatan" owner="Reza"></app-header>
+<main id="main-content" class="page-shell">
+<section class="intro" aria-labelledby="intro-title"><div class="intro-copy-wrap"><p class="eyebrow">CATAT · SIMPAN · LANJUTKAN</p><h1 id="intro-title">Ide baik layak mendapat tempat.</h1><p class="intro-copy">Simpan pemikiran, rencana, dan hal penting dalam satu ruang yang tenang.</p></div><aside class="today-card" aria-label="Tanggal hari ini"><span id="today-day"></span><strong id="today-date"></strong><small>Terhubung ke Notes API</small></aside></section>
+<note-form max-title="50"></note-form>
+<section class="notes-section" aria-labelledby="notes-heading"><div class="section-heading"><div><p class="eyebrow">KOLEKSI</p><h2 id="notes-heading">Catatanmu</h2></div><div class="toolbar"><label class="search-box"><span class="sr-only">Cari catatan</span><svg aria-hidden="true" viewBox="0 0 24 24"><path d="m21 21-4.35-4.35m2.35-5.65a8 8 0 1 1-16 0 8 8 0 0 1 16 0Z"/></svg><input id="search-input" type="search" placeholder="Cari catatan..." autocomplete="off"/></label><div class="filter-group" role="group" aria-label="Filter catatan"><button class="filter-button active" type="button" data-filter="active">Aktif</button><button class="filter-button" type="button" data-filter="archived">Arsip</button></div></div></div><p id="note-count" class="note-count" aria-live="polite"></p><div id="notes-grid" class="notes-grid" aria-live="polite"></div><div id="empty-state" class="empty-state" hidden><span aria-hidden="true">✦</span><h3>Belum ada catatan di sini</h3><p>Tambahkan catatan baru atau coba kata kunci lainnya.</p></div></section>
+</main>
+<footer><p>Dibuat dengan Web Components dan Notes API · <span id="year"></span></p></footer><loading-indicator></loading-indicator>
+</body></html>
