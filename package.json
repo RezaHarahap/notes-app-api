@@ -1,0 +1,14 @@
+{
+  "name": "ruang-catatan-reza",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Notes App terintegrasi RESTful API untuk submission Dicoding.",
+  "scripts": {
+    "start-dev": "webpack serve --config webpack.dev.js --open",
+    "build": "webpack --config webpack.prod.js",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "dependencies": { "sweetalert2": "^11.22.4" },
+  "devDependencies": { "css-loader": "^7.1.2", "html-webpack-plugin": "^5.6.4", "prettier": "^3.6.2", "style-loader": "^4.0.0", "webpack": "^5.101.3", "webpack-cli": "^6.0.1", "webpack-dev-server": "^5.2.2", "webpack-merge": "^6.0.1" }
+}
